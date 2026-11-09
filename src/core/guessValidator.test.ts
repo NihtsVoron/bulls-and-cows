@@ -2,11 +2,6 @@ import { describe, expect, it } from 'vitest';
 import { isValidGuess } from './guessValidator.js';
 
 describe('isValidGuess', () => {
-  it('should return a function', () => {
-    const validGuess = isValidGuess('123', 3, 10);
-    expect(typeof validGuess).toBe('function');
-  });
-
   it('accepts a guess of the right length with unique digits', () => {
     expect(isValidGuess('1234', 4, 10)).toBe(true);
   });
