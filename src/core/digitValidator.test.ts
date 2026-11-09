@@ -22,14 +22,14 @@ describe('createDigitValidator', () => {
   });
 
   it('accepts digits of the base 16', () => {
-    const isDecimal = createDigitValidator(10);
+    const isDecimal = createDigitValidator(16);
     expect(isDecimal('0')).toBe(true);
     expect(isDecimal('f')).toBe(true);
     expect(isDecimal('g')).toBe(false);
   });
 
   it('accepts digits of the base 2', () => {
-    const isDecimal = createDigitValidator(10);
+    const isDecimal = createDigitValidator(2);
     expect(isDecimal('0')).toBe(true);
     expect(isDecimal('1')).toBe(true);
     expect(isDecimal('2')).toBe(false);
