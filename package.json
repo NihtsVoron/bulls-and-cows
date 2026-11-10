@@ -3,6 +3,8 @@
   "version": "1.0.0",
   "description": "https://github.com/rolling-scopes-school/tasks/blob/master/fullstack-engineering/tasks/bulls-and-cows/README.md",
   "main": "index.js",
+  "type": "module",
+  "private": true,
   "scripts": {
     "lint": "eslint .",
     "format": "prettier --write .",
